@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>Galeria</title>
+		<meta name="description" content="">
+		<meta name="author" content="satur">
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/favicon.ico">
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <script type="text/javascript" src="js/operaciones.js"></script>
+	</head>
+	<body>
+		<div class="contenedor">
+			<div class="imagen actual">
+				<img src="images/Asia.jpg" />
+				<div class="texto">Asia</div>
+			</div>
+			
+			<div class="imagen">
+				<img src="images/Brasil.jpg" />
+				<div class="texto">Brasil</div>
+			</div>
+			
+			<div class="imagen">
+				<img src="images/Cuenca.jpg ">
+				<div class="texto">Cuenca</div>
+			</div>
+			
+			<div class="imagen">
+				<img src="images/Dubai.jpg" />
+				<div class="texto">Dubai</div>
+			</div>
+			
+			<a href="#" class="anterior" onclick="anterior();">&#10094;</a>
+			<a href="#" class="siguiente" onclick="siguiente();">&#10095;</a>
+			
+			<div class="puntos">
+				<span class="punto activo" onclick="mostrar(0);"></span>
+				<span class="punto" onclick="mostrar(1);"></span>
+				<span class="punto" onclick="mostrar(2);"></span>
+				<span class="punto" onclick="mostrar(3);"></span>
+			</div>
+			
+			<div class="boton">
+				<a href="#">
+					<img src="imagenes/pause.png" id="btn" onclick="playpause();" />
+				</a>
+			</div>
+		</div>
+	</body>
+</html>
