@@ -25,7 +25,7 @@ function mostrar(n){
 
 function siguiente(){
     actual++;
-    if(actual > 3){
+    if(actual > 4){
         actual = 0;
     }
     mostrar(actual);
@@ -33,7 +33,7 @@ function siguiente(){
 function anterior(){
     actual--;
     if(actual < 0){
-        actual = 3;
+        actual = 4;
     }
     mostrar(actual);
 }
