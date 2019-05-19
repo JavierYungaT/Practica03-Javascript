@@ -44,11 +44,11 @@ var play = setInterval("siguiente()", velocidad);
 function playpause(){
     var boton = document.getElementById("btn");
     if(play == null){
-        boton.src = "imagenes/pause.png";
+        boton.src = "images";
         play = setInterval("siguiente()", velocidad);
     } else {
         clearInterval(play);
         play = null;
-        boton.src = "imagenes/play.png";
+        boton.src = "images/play.png";
     }
 }
