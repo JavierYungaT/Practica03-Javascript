@@ -1,6 +1,6 @@
 .contenedor {
     position: relative;
-    width: 980px;
+    width: 900px;
     height: 670px;
     background-color: black;
     border-radius: 10px;
@@ -12,6 +12,11 @@
     height: 100%;
     visibility: hidden;
     opacity: 0;
+}
+button{
+
+    padding: 2px;
+    width: 20%;;
 }
 
 .imagen img {

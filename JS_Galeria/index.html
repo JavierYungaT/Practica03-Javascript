@@ -3,16 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-
-	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
-		Remove this if you use the .htaccess -->
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-	<title>Galeria</title>
-	<meta name="description" content="">
-	<meta name="author" content="satur">
-	<meta name="viewport" content="width=device-width; initial-scale=1.0">
-	
+	<title>Galeria</title>	
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<script type="text/javascript" src="js/operaciones.js"></script>
 </head>
@@ -20,32 +11,33 @@
 <body >
 	<div class="contenedor">
 		<div class="imagen actual">
-			<img src="images/Asia.jpg" />
+			<img id="0" class="mySlides" src="images/Asia.jpg" />
 			<div class="texto">Asia</div>
 		</div>
 
 		<div class="imagen">
-			<img src="images/Brasil.jpg" />
+			<img id="1" class="mySlides" src="images/Brasil.jpg" />
 			<div class="texto">Brasil</div>
 		</div>
 
 		<div class="imagen">
-			<img src="images/Cuenca.jpg ">
+			<img id="2" class="mySlides" src="images/Cuenca.jpg ">
 			<div class="texto">Cuenca</div>
 		</div>
 
 		<div class="imagen">
-			<img src="images/Dubai.jpg" />
+			<img id="3" class="mySlides" src="images/Dubai.jpg" />
 			<div class="texto">Dubai</div>
 		</div>
 		<div class="imagen">
-			<img src="images/Estados_Unidos.png" />
+			<img id="4" class="mySlides" src="images/Estados_Unidos.png" />
 			<div class="texto">Estados_Unidos</div>
 		</div>
 
-		<a href="#" class="anterior" onclick="anterior();">&#10094;</a>
-		<a href="#" class="siguiente" onclick="siguiente();">&#10095;</a>
-
+		<a id="left" href="#" class="anterior" onclick="anterior();">&#10094;</a>
+		<a id="right" href="#" class="siguiente" onclick="siguiente();">&#10095;</a>
+        <button id="center" class="button black center" onclick="iniciar()">INICIAR</button>
+    
 		<div class="puntos">
 			<span class="punto activo" onclick="mostrar(0);"></span>
 			<span class="punto" onclick="mostrar(1);"></span>
