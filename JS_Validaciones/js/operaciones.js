@@ -95,7 +95,7 @@ function validarCedula(){
             
             return true
         }else{
-            alert("Su cedula no corresponde a ecuador")
+            alert("Cedula incorrecta")
             return false
         }
     }else{

@@ -16,12 +16,10 @@
         </a>
     </header>
 
-    <form id="formulario01" method="Post" action="JS_Validaciones/index.html"
-        onsubmit="return validarCamposObligatorios()">
+    <form class="registro" method="Post" action="JS_Validaciones/index.html" onsubmit="return validarCamposObligatorios()">
 
         <label for="cedula">Cedula: </label>
-        <input type="text" id="cedula" name="cedula" value="" placeholder="Ingrese su cedula"
-            onkeyup=" validarCedula(this)">
+        <input type="text" id="cedula" name="cedula" value="" placeholder="Ingrese su cedula" onkeyup=" validarCedula(this)">
         <span id="mensajeCedula"></span>
 
         <br>

@@ -44,7 +44,7 @@ var play = setInterval("siguiente()", velocidad);
 function playpause(){
     var boton = document.getElementById("btn");
     if(play == null){
-        boton.src = "images";
+        boton.src = "images/pause.png";
         play = setInterval("siguiente()", velocidad);
     } else {
         clearInterval(play);

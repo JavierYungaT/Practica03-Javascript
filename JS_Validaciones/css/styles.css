@@ -1,6 +1,6 @@
 
 .error{
-    color:red;
+    color:rgb(238, 14, 14);
     font-size: 8px;
 }
 
@@ -14,12 +14,32 @@
 	position: fixed; /* Hacemos que la cabecera tenga una posición fija */
 }
 
+.registro{
+
+	margin: 2% 5%;
+    width: 700px;
+    position: absolute;
+    top: 50%;
+	left: 50%;
+	border: 2px solid #0a3f26;
+    transform: translate(-50%,-50%);
+    background: #2090b3;
+	text-align: center;
+	padding: 20px 10px;
+	outline: none;
+	border-radius: 25px;
+    transition: 0.50s;
+    float: left;
+}
+
 body {
-    
-    padding: 50px;
-	font-family: 'Courier New', Courier, monospace;
-	color: rgb(26, 24, 24);
-	background:white; 
+	
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background: #4d7fb1;
+	
+	/*font-family: 'Courier New', Courier, monospace;*/
 	font-size: 1em;
     line-height: 1.5em;
     padding-top: 100px; /* Relleno superior igual a la altura de la cabecera*/
@@ -29,6 +49,15 @@ body {
 	box-shadow: 0 0 10px rgb(0,0,0,.1);
 }
 
+
+input[type="text"], input[type="password"]{
+	border-radius: 200px;
+	background: #4cd2f3;
+
+}
+input ,label{
+	margin-left: 5px;
+   }
 form {
     display: inline-block;
     text-align: center;
