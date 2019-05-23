@@ -1,72 +1,69 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title> Validaciones</title>
-    <script type="text/javascript" src="js/operaciones.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+	<meta charset="utf-8">
+	<title>PHP</title>
+	<script type="text/javascript" src="js/javascript.js"></script>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-
 <body>
-    <header id="cabecera">
-        <a id="logo">
-            <span> Validaciones </span> <br>
-            <span>Llenar el formulario </span>
-        </a>
-    </header>
 
-    <form class="registro" method="Post" action="JS_Validaciones/index.html" onsubmit="return validarCamposObligatorios()">
+	<section>
+		<div id="form">
+			<h1>Formulario</h1>
+			<form method="POST" action="php/crear_usuario.php" onsubmit="return validar()">
+				<table>
+					<tr>
+						<td><label>Cedula</label></td>
+						<td><input type="text" id="ced" name="ced" placeholder="ingresa tu cédula" onfocus="escribe(this)" onkeyup="this.value = val_numero(this.value)"></td>
+						<td><spam id="c" style="display: none;">*error</spam></td>
+					</tr>
 
-        <label for="cedula">Cedula: </label>
-        <input type="text" id="cedula" name="cedula" value="" placeholder="Ingrese su cedula" onkeyup=" validarCedula(this)">
-        <span id="mensajeCedula"></span>
+					<tr>
+						<td><label>Nombre</label></td>
+						<td><input type="text" name="nom" placeholder="ingresa tu nombre" onfocus="escribe(this)" onkeyup="this.value = val_letra(this.value)" onchange="this.value = dos_valores(this.value)"></td>
+					</tr>
 
-        <br>
+					<tr>
+						<td><label>Apellido</label></td>
+						<td><input type="text" name="ape" placeholder="ingresa tu apellido" onfocus="escribe(this)" onkeyup="this.value = val_letra(this.value)" onchange="this.value = dos_valores(this.value)"></td>
+					</tr>
 
-        <label for="nombres">Nombres: </label>
-        <input type="text" id="nombres" name="nombres" value="" placeholder="Ingrese sus dos nombres"
-            onkeyup="validarLetras(this)">
+					<tr>
+						<td><label>Dirección</label></td>
+						<td><input type="text" name="dir" placeholder="ingresa tu dirección" onfocus="escribe(this)"></td>
+					</tr>
 
-        <br>
+					<tr>
+						<td><label>Teléfono</label></td>
+						<td><input type="text" name="tel" placeholder="ingresa tu número telefónico" onfocus="escribe(this)" onkeyup="this.value = val_numero(this.value)"></td>
+					</tr>
 
-        <label for="apellidos">Apellidos: </label>
-        <input type="text" id="apellidos" name="apellidos" value="" placeholder="Ingrese sus apellidos"
-            onkeyup="validarNumeros(this)">
+					<tr>
+						<td><label>Fecha de Nacimiento</label></td>
+						<td><input type="text" id="fec" name="fec" placeholder="dd/mm/yyyy" onfocus="escribe(this)"></td>
+						<td><spam id="f" style="display: none;">*error</spam></td>
+					</tr>
 
-        <br>
+					<tr>
+						<td><label>Email</label></td>
+						<td><input type="text" id="ema" name="ema" placeholder="ingresa tu email" onfocus="escribe(this)"></td>
+						<td><spam id="e" style="display: none;">*error</spam></td>
+					</tr>
 
-        <label for="direccion">Dirección: </label>
-        <input type="text" id="direccion" name="direccion" value="" placeholder="Ingrese su dirección">
-
-        <br>
-
-        <label for="telefono">Teléfono: </label>
-        <input type="text" id="telefono" name="telefono" value="" placeholder="Ingrese su número de teléfono"
-            onkeyup="validarTelefono(this)" onkeyup="validarNumeros(this)">
-
-        <br>
-
-        <label for="fechaNacimiento">Fecha de Nacimiento: </label>
-        <input type="text" id="fechaNacimiento" name="fechaNacimiento" value="" placeholder="Ingrese la fecha"
-            onkeyup="validarFecha(this)">
-
-        <br>
-
-        <label for="correo">Correo: </label>
-        <input type="text" id="correo" name="correo" value="" placeholder="Ingrese su correo electrónico"
-            onkeyup="validarCorreo(this)">
-
-        <br>
-
-        <label for="contrasena">Contraseña: </label>
-        <input type="password" id="contrasena" name="contrasena" value="" placeholder="Ingrese su contraseña">
-
-        <br>
-
-        <input type="submit" id="crear" name="crear" value="Aceptar">
-        <input type="reset" id="cancelar" name="cancelar" value="Cancelar">
-    </form>
+					<tr>
+						<td colspan="2">
+							<div id="btn">
+								<input type="submit" id="crear" name="crear" value="Aceptar">
+								<input type="reset" id="cancelar" name="cancelar" value="Cancelar">
+							</div>
+						</td>
+					</tr>
+				</table>
+			</form>
+			<spam id="p" style="display: none;">Error, campos incompletos!</spam>
+		</div>
+	</section>
 </body>
-
 </html>
