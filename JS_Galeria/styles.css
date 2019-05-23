@@ -1,0 +1,38 @@
+
+body{
+    background-image: url('../JS_Validaciones/imagenes/Fondo-Formularios.gif');
+	background-size: 100%;
+	background-repeat: no-repeat;
+    text-align: center;
+}
+#img{
+    width: 88%;
+    height: 600px;
+    border-radius:10px;
+}
+form {
+    width: 90%;
+    margin: auto;
+    background: rgba(0,0,0,.2);
+    padding:40px 80px;
+    margin-top:90px;
+    border-radius: 10px;
+
+}
+
+input{
+    color: rgb(31, 26, 28);
+    background: rgb(142, 145, 144);
+    border: 2px solid rgb(7, 86, 122);
+    border-radius: 40px;
+    margin: 40px;
+    padding: 10px 30px;
+    width: 200px;
+    height: 50px;
+    font-size: 23px;
+    text-align: center;
+    border-bottom: solid 1px #fff;
+    margin-top: 2px;
+    transition: all 300ms ease;
+    font-family:'Times New Roman', Times, serif; 
+}

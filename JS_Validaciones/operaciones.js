@@ -30,43 +30,32 @@ function validar(){
     }
 }
 
-//Quita los mensajes de error por datos incompletos en cuanto el usuario ingresa valores
 function escribe(elemento) {
     elemento.classList.remove('error');
     document.getElementById('p').classList.remove('p');
 }
 
-//Valida que solo se ingresen números
 function val_numero(string){
     var out = '';
-    var filtro = '1234567890';//Caracteres validos
-    
-    //Recorre el value y verifica si el caracter se encuentra en la lista de validos 
+    var filtro = '1234567890';
+     
     for (var i = 0; i < string.length; i++)
         if (filtro.indexOf(string.charAt(i)) != -1) 
-        //Se añaden a la salida los caracteres validos
         out += string.charAt(i);
     
-    //Retornar el valor filtrado
     return out;
 } 
 
-//Valida que solo se ingresen letras
 function val_letra(string){
     var out = '';
-    var filtro = 'abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ ';//Caracteres validos
+    var filtro = 'abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ ';
     
-    //Recorre el value y verifica si el caracter se encuentra en la lista de validos 
     for (var i = 0; i < string.length; i++)
         if (filtro.indexOf(string.charAt(i)) != -1) 
-        //Se añaden a la salida los caracteres validos
         out += string.charAt(i);
-    
-    //Retorna el valor filtrado
     return out;
 } 
 
-//Permite que sólo se ingresen dos valores
 function dos_valores(string) {
     var out = '';
     var array = string.split(' ');
@@ -90,8 +79,8 @@ function validarFecha() {
     } else {
         document.getElementById('fec').classList.add('error');
         document.getElementById('f').classList.add('p');
-        alert('Fecha mal ingresada, usar formato dd/mm/yyyy');
-        return true; //Inválida
+        alert('Fecha mal ingresada, formato dd/mm/yyyy');
+        return true; 
     }
 }
 
@@ -118,7 +107,7 @@ function validarCorreo() {
         if (!(array[1] == 'ups.edu.ec') && !(array[1] == 'est.ups.edu.ec')) {
             document.getElementById('ema').classList.add('error');
             document.getElementById('e').classList.add('p');
-            alert('Extensión no válida')
+            alert('Extencion no válida')
             return true;
         } else {
             return false;

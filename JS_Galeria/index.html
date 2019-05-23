@@ -1,30 +1,16 @@
 <!DOCTYPE html>
-<html lang="es">
-
-<head>
-    <title>Galería</title>
-    <meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="../JS_Galeria/css/styles.css">
-	<script type="text/javascript" src="../JS_Galeria/js/operaciones.js"></script>
-</head>
-
-<body >
-    <section>
-
-        <div id="img">
-            <h1 style="color: rgb(5, 49, 107)"> Galeria Javier Yunga</h1>
-            <img id="0" class="mySlides" src="">
-            <img id="1" class="mySlides" src="">
-            <img id="2" class="mySlides" src="">
-            <img id="3" class="mySlides" src="">
-            <img id="4" class="mySlides" src="">
-        </div>
-        <button id="left" class="button black left" onclick="plusDivs(-1)">&#10094;</button>
-        <button id="center" class="button black center" onclick="iniciar()">INICIAR</button>
-        <button id="right" class="button black right" onclick="plusDivs(+1)">&#10095;</button>
-    
-    </section>
-</body>
-
-
+<html>
+    <head>
+        <title>Galeria</title>
+        <script type="text/javascript" src="../JS_Galeria/operaciones.js"></script>
+        <link type="text/css" href="../JS_Galeria/styles.css" rel="stylesheet">
+    </head>
+    <body onload="init()">
+        <form>
+            <img id="img">
+            <input type="button" id="anterior" name="anterior" value="Anterior" onclick="atras()">
+            <input type="button" id="iniciar" name="iniciar" value="Iniciar" onclick="init()">
+            <input type="button" id="siguiente" name="siguiente" value="Siguiente" onclick="adelante()">
+        </form>
+    </body>
 </html>
