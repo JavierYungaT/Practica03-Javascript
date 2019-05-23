@@ -15,7 +15,7 @@ form {
     margin: auto;
     background: rgba(0,0,0,.2);
     padding:40px 80px;
-    margin-top:90px;
+    margin-top:50px;
     border-radius: 10px;
 
 }
@@ -35,4 +35,9 @@ input{
     margin-top: 2px;
     transition: all 300ms ease;
     font-family:'Times New Roman', Times, serif; 
+}
+h1{
+    text-align: center;
+    background: rgb(90, 194, 241);
+    margin-top: 20px;
 }
