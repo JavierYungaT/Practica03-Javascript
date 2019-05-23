@@ -3,9 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<title>PHP</title>
-	<script type="text/javascript" src="js/javascript.js"></script>
+	<script type="text/javascript" src="../JS_Validaciones/js/operaciones.js"></script>
 	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="../JS_Validaciones/css/styles.css">
 </head>
 <body>
 
@@ -16,28 +16,28 @@
 				<table>
 					<tr>
 						<td><label>Cedula</label></td>
-						<td><input type="text" id="ced" name="ced" placeholder="ingresa tu cédula" onfocus="escribe(this)" onkeyup="this.value = val_numero(this.value)"></td>
+						<td><input type="text" id="ced" name="ced" placeholder="ingresar la cédula" onfocus="escribe(this)" onkeyup="this.value = val_numero(this.value)"></td>
 						<td><spam id="c" style="display: none;">*error</spam></td>
 					</tr>
 
 					<tr>
 						<td><label>Nombre</label></td>
-						<td><input type="text" name="nom" placeholder="ingresa tu nombre" onfocus="escribe(this)" onkeyup="this.value = val_letra(this.value)" onchange="this.value = dos_valores(this.value)"></td>
+						<td><input type="text" name="nom" placeholder="ingresar el nombre" onfocus="escribe(this)" onkeyup="this.value = val_letra(this.value)" onchange="this.value = dos_valores(this.value)"></td>
 					</tr>
 
 					<tr>
 						<td><label>Apellido</label></td>
-						<td><input type="text" name="ape" placeholder="ingresa tu apellido" onfocus="escribe(this)" onkeyup="this.value = val_letra(this.value)" onchange="this.value = dos_valores(this.value)"></td>
+						<td><input type="text" name="ape" placeholder="ingresar el apellido" onfocus="escribe(this)" onkeyup="this.value = val_letra(this.value)" onchange="this.value = dos_valores(this.value)"></td>
 					</tr>
 
 					<tr>
 						<td><label>Dirección</label></td>
-						<td><input type="text" name="dir" placeholder="ingresa tu dirección" onfocus="escribe(this)"></td>
+						<td><input type="text" name="dir" placeholder="ingresar la dirección" onfocus="escribe(this)"></td>
 					</tr>
 
 					<tr>
 						<td><label>Teléfono</label></td>
-						<td><input type="text" name="tel" placeholder="ingresa tu número telefónico" onfocus="escribe(this)" onkeyup="this.value = val_numero(this.value)"></td>
+						<td><input type="text" name="tel" placeholder="ingresar el número telefónico" onfocus="escribe(this)" onkeyup="this.value = val_numero(this.value)"></td>
 					</tr>
 
 					<tr>
@@ -48,7 +48,7 @@
 
 					<tr>
 						<td><label>Email</label></td>
-						<td><input type="text" id="ema" name="ema" placeholder="ingresa tu email" onfocus="escribe(this)"></td>
+						<td><input type="text" id="ema" name="ema" placeholder="ingresar el email" onfocus="escribe(this)"></td>
 						<td><spam id="e" style="display: none;">*error</spam></td>
 					</tr>
 
