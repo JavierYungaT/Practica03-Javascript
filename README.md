@@ -97,6 +97,7 @@ RESULTADO(S) OBTENIDO(S):
 
 CONCLUSIONES:
 Con esta practica logramos organizar los sitios web, basados en html, css, JavaScript, dándonos cuenta el uso importante de cada uno.
+
 RECOMENDACIONES:
 
 •	Tener conocimientos previos de javascript, html, css, php. 
